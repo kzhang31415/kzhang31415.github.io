@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-09-24T19:05:43-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">Monte Carlo Options Pricing</title><link href="http://localhost:4000/blog/2024/monte-carlo-options-pricing/" rel="alternate" type="text/html" title="Monte Carlo Options Pricing" /><published>2024-09-23T20:00:00-04:00</published><updated>2024-09-23T20:00:00-04:00</updated><id>http://localhost:4000/blog/2024/monte-carlo-options-pricing</id><content type="html" xml:base="http://localhost:4000/blog/2024/monte-carlo-options-pricing/"><![CDATA[<p>Hello</p>
+
+<div id="plot-0"></div>
+<p><br />
+<span class="slider-container">
+    <span class="slider-label">\(\mu:\)</span>
+    <span class="slider-value" id="days-slider-value">0</span>
+    <span>
+        <input class="slider" id="days-slider" type="range" min="0" max="1825" value="0" step="1" />
+    </span>
+</span></p>
+
+<p><span class="slider-container">
+    <span class="slider-label">\(\mu:\)</span>
+    <span class="slider-value" id="mean-slider-value">0</span>
+    <span>
+        <input class="slider" id="mean-slider" type="range" min="-1" max="1" value="0" step="0.01" />
+    </span>
+</span></p>
+
+<p><span class="slider-container">
+    <span class="slider-label">\(\sigma:\)</span>
+    <span class="slider-value" id="sigma-slider-value">0</span>
+    <span>
+        <input class="slider" id="sigma-slider" type="range" min="0" max="1" value="0" step="0.01" />
+    </span>
+</span></p>
+
+<p>World</p>
+
+<script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+
+<script src="/assets/js/posts/monte-carlo-options-pricing.js"></script>]]></content><author><name></name></author><category term="posts" /><category term="math" /><category term="cs" /><category term="finance" /><summary type="html"><![CDATA[Randomness]]></summary></entry><entry><title type="html">D.E. Shaw Connect 2024</title><link href="http://localhost:4000/blog/2024/de-shaw-connect-2024/" rel="alternate" type="text/html" title="D.E. Shaw Connect 2024" /><published>2024-09-09T20:00:00-04:00</published><updated>2024-09-09T20:00:00-04:00</updated><id>http://localhost:4000/blog/2024/de-shaw-connect-2024</id><content type="html" xml:base="http://localhost:4000/blog/2024/de-shaw-connect-2024/"><![CDATA[]]></content><author><name></name></author><category term="posts" /><category term="life" /><summary type="html"><![CDATA[Back for round 2]]></summary></entry><entry><title type="html">ASCII Art</title><link href="http://localhost:4000/blog/2024/ascii-art/" rel="alternate" type="text/html" title="ASCII Art" /><published>2024-02-05T06:32:00-05:00</published><updated>2024-02-05T06:32:00-05:00</updated><id>http://localhost:4000/blog/2024/ascii-art</id><content type="html" xml:base="http://localhost:4000/blog/2024/ascii-art/"><![CDATA[<p>Art is everywhere we look.</p>
+
+<p>Take the internet, for example. From the minimalist design of this blog page, to the news articles we read and the memes we spend hours on Youtube watching. Wherever we go, whatever we make, we inject some amount of art into the environment. Most of us take this for granted, but good design helps our mental health tremendously, especially as people are spending more and more time on the internet.</p>
+
+<p>But I’d like to focus your attention on one extraordinary example of this principle. Even in the black and white, rigidly structured environment of a terminal, people have managed to create art.</p>
+
+<p>If you’re a CMU student, then you’ll have probably encountered this screen at some point:</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+    <img src="/assets/img/posts/2024-02-05-ascii-art/linux-cmu-logo.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+
+<p>You see it after logging into your AFS enviroment.</p>
+
+<p>The first time I encountered this, in the middle of 15-122 recitation, I thought it was neat. I took a screenshot of it and told myself that I’d put it somewhere on my website eventually. And here we are.</p>
+
+<p>But this post is more than just an excuse to share this ASCII rendering of the Scotty Shield. After looking into it more, it seems the world of ASCII art is much deeper than I could’ve imagined.</p>
+
+<p>A very famous piece of ASCII art (at least for programmers) is the spinning donut. Credits go to Andy Sloane, who wrote the <code class="language-plaintext highlighter-rouge">donut.c</code> file below</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="code"><pre>             <span class="n">k</span><span class="p">;</span><span class="kt">double</span> <span class="nf">sin</span><span class="p">()</span>
+         <span class="p">,</span><span class="n">cos</span><span class="p">();</span><span class="n">main</span><span class="p">(){</span><span class="kt">float</span> <span class="n">A</span><span class="o">=</span>
+       <span class="mi">0</span><span class="p">,</span><span class="n">B</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">z</span><span class="p">[</span><span class="mi">1760</span><span class="p">];</span><span class="kt">char</span> <span class="n">b</span><span class="p">[</span>
+     <span class="mi">1760</span><span class="p">];</span><span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\x1b</span><span class="s">[2J"</span><span class="p">);</span><span class="k">for</span><span class="p">(;;</span>
+  <span class="p">){</span><span class="n">memset</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">1760</span><span class="p">);</span><span class="n">memset</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7040</span><span class="p">)</span>
+  <span class="p">;</span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="mf">6.28</span><span class="o">&gt;</span><span class="n">j</span><span class="p">;</span><span class="n">j</span><span class="o">+=</span><span class="mf">0.07</span><span class="p">)</span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="mf">6.28</span>
+ <span class="o">&gt;</span><span class="n">i</span><span class="p">;</span><span class="n">i</span><span class="o">+=</span><span class="mf">0.02</span><span class="p">){</span><span class="kt">float</span> <span class="n">c</span><span class="o">=</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="n">d</span><span class="o">=</span><span class="n">cos</span><span class="p">(</span><span class="n">j</span><span class="p">),</span><span class="n">e</span><span class="o">=</span>
+ <span class="n">sin</span><span class="p">(</span><span class="n">A</span><span class="p">),</span><span class="n">f</span><span class="o">=</span><span class="n">sin</span><span class="p">(</span><span class="n">j</span><span class="p">),</span><span class="n">g</span><span class="o">=</span><span class="n">cos</span><span class="p">(</span><span class="n">A</span><span class="p">),</span><span class="n">h</span><span class="o">=</span><span class="n">d</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span><span class="n">D</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">c</span><span class="o">*</span>
+ <span class="n">h</span><span class="o">*</span><span class="n">e</span><span class="o">+</span><span class="n">f</span><span class="o">*</span><span class="n">g</span><span class="o">+</span><span class="mi">5</span><span class="p">),</span><span class="n">l</span><span class="o">=</span><span class="n">cos</span>      <span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="n">m</span><span class="o">=</span><span class="n">cos</span><span class="p">(</span><span class="n">B</span><span class="p">),</span><span class="n">n</span><span class="o">=</span><span class="n">s</span>\
+<span class="n">in</span><span class="p">(</span><span class="n">B</span><span class="p">),</span><span class="n">t</span><span class="o">=</span><span class="n">c</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">g</span><span class="o">-</span><span class="n">f</span><span class="o">*</span>        <span class="n">e</span><span class="p">;</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">40</span><span class="o">+</span><span class="mi">30</span><span class="o">*</span><span class="n">D</span><span class="o">*</span>
+<span class="p">(</span><span class="n">l</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">m</span><span class="o">-</span><span class="n">t</span><span class="o">*</span><span class="n">n</span><span class="p">),</span><span class="n">y</span><span class="o">=</span>            <span class="mi">12</span><span class="o">+</span><span class="mi">15</span><span class="o">*</span><span class="n">D</span><span class="o">*</span><span class="p">(</span><span class="n">l</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">n</span>
+<span class="o">+</span><span class="n">t</span><span class="o">*</span><span class="n">m</span><span class="p">),</span><span class="n">o</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="mi">80</span><span class="o">*</span><span class="n">y</span><span class="p">,</span>          <span class="n">N</span><span class="o">=</span><span class="mi">8</span><span class="o">*</span><span class="p">((</span><span class="n">f</span><span class="o">*</span><span class="n">e</span><span class="o">-</span><span class="n">c</span><span class="o">*</span><span class="n">d</span><span class="o">*</span><span class="n">g</span>
+ <span class="p">)</span><span class="o">*</span><span class="n">m</span><span class="o">-</span><span class="n">c</span><span class="o">*</span><span class="n">d</span><span class="o">*</span><span class="n">e</span><span class="o">-</span><span class="n">f</span><span class="o">*</span><span class="n">g</span><span class="o">-</span><span class="n">l</span>        <span class="o">*</span><span class="n">d</span><span class="o">*</span><span class="n">n</span><span class="p">);</span><span class="k">if</span><span class="p">(</span><span class="mi">22</span><span class="o">&gt;</span><span class="n">y</span><span class="o">&amp;&amp;</span>
+ <span class="n">y</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">x</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="mi">80</span><span class="o">&gt;</span><span class="n">x</span><span class="o">&amp;&amp;</span><span class="n">D</span><span class="o">&gt;</span><span class="n">z</span><span class="p">[</span><span class="n">o</span><span class="p">]){</span><span class="n">z</span><span class="p">[</span><span class="n">o</span><span class="p">]</span><span class="o">=</span><span class="n">D</span><span class="p">;;;</span><span class="n">b</span><span class="p">[</span><span class="n">o</span><span class="p">]</span><span class="o">=</span>
+ <span class="s">".,-~:;=!*#$@"</span><span class="p">[</span><span class="n">N</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">?</span><span class="n">N</span><span class="o">:</span><span class="mi">0</span><span class="p">];}}</span><span class="cm">/*#****!!-*/</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\x1b</span><span class="s">[H"</span><span class="p">);</span><span class="k">for</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="mi">1761</span><span class="o">&gt;</span><span class="n">k</span><span class="p">;</span><span class="n">k</span><span class="o">++</span><span class="p">)</span>
+   <span class="n">putchar</span><span class="p">(</span><span class="n">k</span><span class="o">%</span><span class="mi">80</span><span class="o">?</span><span class="n">b</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">:</span><span class="mi">10</span><span class="p">);</span><span class="n">A</span><span class="o">+=</span><span class="mf">0.04</span><span class="p">;</span><span class="n">B</span><span class="o">+=</span>
+     <span class="mf">0.02</span><span class="p">;}}</span><span class="cm">/*****####*******!!=;:~
+       ~::==!!!**********!!!==::-
+         .,~~;;;========;;;:~-.
+             ..,--------,*/</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>which produces a spinning donut animation:</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+    <img src="/assets/img/posts/2024-02-05-ascii-art/donut.gif" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+
+<p>Crazy.</p>
+
+<p>You’ve probably heard the explanation for how it works before, but in case you haven’t, <a href="https://www.a1k0n.net/2011/07/20/donut-math.html">this</a> article explains it pretty well.</p>
+
+<p>The techniques used to generate the donut animation are actually the same ones commonly used throughout computer graphics. However, what sets it apart is that it’s all done right in the terminal, with certain ASCII symbols corresponding to brightness values. I think it’s quite neat.</p>
+
+<p>There’s thousands of examples of ASCII art on the internet. The most common technique is to just take an existing video and match the brightness values to ASCII characters, rather than generating the animation itself like in the donut animation. In fact, here’s a <a href="https://www.asciiart.eu/">website</a> dedicated to ASCII art.</p>
+
+<p>If there’s one takeaway to be had from this post, I guess it’d be to appreciate how our artistic instincts can reach every corner of the known world, including the metaphysical world (the internet included). Even (or especially) in the dullest, most structured environments, art still shines through. And I think we should take a moment to appreciate that.</p>
+
+<p>Because our terminals would be a lot emptier without art.</p>]]></content><author><name></name></author><category term="posts" /><category term="art" /><category term="cs" /><summary type="html"><![CDATA[A post to appreaciate ASCII art.]]></summary></entry><entry><title type="html">Convergence in $$\mathbb{R}^{2}$$</title><link href="http://localhost:4000/blog/2024/convergence-in-r2/" rel="alternate" type="text/html" title="Convergence in $$\mathbb{R}^{2}$$" /><published>2024-02-04T19:00:00-05:00</published><updated>2024-02-04T19:00:00-05:00</updated><id>http://localhost:4000/blog/2024/convergence-in-r2</id><content type="html" xml:base="http://localhost:4000/blog/2024/convergence-in-r2/"><![CDATA[<p>If you’ve ever done competition math, you’ll probably have encountered something similar to this problem before:</p>
+
+<blockquote>
+  <p>A robot starts at the origin of the Cartesian plane facing the positive x-direction and moves in the following manner. At each timestep \(k\), the robot moves \(k\) units in the direction it is facing and then rotates an angle \(\theta\) counterclockwise. Find the position of the robot after \(n\) steps.</p>
+</blockquote>
+
+<p>A similar type of problem appeared in the Ross Program’s 2023 Application Set. Let’s walk through the solution, and along the way, we’ll encounter the main highlight of this post.</p>
+
+<p>As with all problems, quantifying the problem statement will make the solution much clearer. Let \(p_{k}\) be the position of the robot at timestep \(k\) (so \(p_{0}=(0,0),\ p_{1}=(1,0),\) etc). It’s clear that the direction the robot faces after \(k\) timesteps is \((k-1)\theta\). Then going by the problem description, we gain a recursive defition for \(p_{n},\) which quickly turns into a summation formula once we repeatedly apply the recursive definition:</p>
+
+\[\begin{align*}
+p_{n} &amp;= p_{n-1} + (n\cos((n-1)\theta), n\sin((n-1)\theta))\\
+&amp;\vdots\\
+&amp;=p_{0}+\sum_{k=1}^{n}(k\cos((k-1)\theta), k\sin((k-1)\theta))\\&amp;=\sum_{k=1}^{n}(k\cos((k-1)\theta), k\sin((k-1)\theta))
+\end{align*}\]
+
+<p>If this is your first time seeing such a problem, you might ask yourself “how am I going to compute this?” Sure, you could plug the whole thing into WolframAlpha, but that’s cheating (and when I first encountered this problem, Wolfram timed out on me).</p>
+
+<p>Here comes the star of this post: complex numbers.</p>
+
+<p>To quickly summarize complex numbers for those of you who need a refresher, we essentially set \(i=\sqrt{-1}\) and treat \(a+bi\) as a 2D number along the \(1-i\) plane, analogous to the point \((a,b)\) in \(\mathbb{R}^{2}.\) The reason we introduce complex numbers is because of Euler’s formula: \(e^{i\theta}=cos(\theta)+i\sin(\theta).\) We can express points in \(\mathbb{R}^{2}\) as singular variables which we can do algebra with.</p>
+
+<p>To demonstrate what I mean, define \(z=e^{i\theta},\) and let \([p_{n}]\) denote the analogous complex number to \(p_{n}\). Note that per Euler’s formula, our sum simplifies to:</p>
+
+\[\begin{align*}
+[p_{n}]&amp;=\sum_{k=1}^{n}kz^{k-1}=\sum_{k=1}^{n}\frac{d}{dz}z^{k}=\frac{d}{dz}\sum_{k=1}^{n}z^{k}\\
+&amp;=\frac{d}{dz}\frac{z(z^{n}-1)}{z-1}=\frac{nz^{n+1}-(n+1)z^{n}+1}{(z-1)^{2}}
+\end{align*}\]
+
+<p>Just like that, we have a simple, closed form expression for what is basically \(p_{n},\) the answer to the problem. To get rid of the pesky complex number at the bottom, we can multiply the numerator and denominator by the conjugate of \((z-1)^{2}\). Plugging in \(z=e^{i\theta}\) gets us the formula in terms of \(n,\ \theta.\) You could even compute the limit of this formula to see if and where the robot converges.</p>
+
+<p>The first time I found this solution, I was blown away that we could compute the endpoint of such a complicated process with math. I thought I would need a computer for sure! But what fascinated me more was the technique of applying algebra to complex expressions, as if the techniques from algebra on real expressions carried over without exception.</p>
+
+<p>So, why does this work? It’s primarily due to the fact that the deriative and the identity we used,</p>
+
+\[\sum_{k=1}^{n}z^{k}=\frac{z(z^{n}-1)}{z-1}\]
+
+<p>only depend on the linearity, distributivity, additive closure, and multiplicative closure of the algebraic structure we’re working in. As fields, both \(\mathbb{R}\) and \(\mathbb{C}\) fufill those properties and more, meaning the algebraic identity carried over without exception from the reals to the complex numbers. Even better, we can apply that identity to any other number system or algebraic structure which has those properties (assuming the definition of exponentiation is analogous to how we defined it). Abstract algebra is beyond the scope of this post, though, so don’t worry if you’re reading this and don’t know what a field is.</p>
+
+<p>It’s easy to see the applications. The solution to the problem could be applied to robotics, and physicists often use this technique to model oscillations, since computation becomes much simpler.</p>
+
+<p>If math had a theme, it would be that everything is simple from the right perspective. The theme rings true here as well. From the initial perspective, the formula for \(p_{n}\) looked like a mess that I wouldn’t want to touch. Through a different perspective, it changes into a simple closed-form expression. Easy to see in hindsight, but evasive to first timers.</p>
+
+<p>It’s through moments like these that I’m reminded of the beauty of math.</p>]]></content><author><name></name></author><category term="posts" /><category term="math" /><summary type="html"><![CDATA[Why do I see imaginary numbers?]]></summary></entry><entry><title type="html">D.E. Shaw Connect 2023</title><link href="http://localhost:4000/blog/2023/de-shaw-connect-2023/" rel="alternate" type="text/html" title="D.E. Shaw Connect 2023" /><published>2023-09-20T20:00:00-04:00</published><updated>2023-09-20T20:00:00-04:00</updated><id>http://localhost:4000/blog/2023/de-shaw-connect-2023</id><content type="html" xml:base="http://localhost:4000/blog/2023/de-shaw-connect-2023/"><![CDATA[]]></content><author><name></name></author><category term="posts" /><category term="life" /><summary type="html"><![CDATA[NYC + Networking]]></summary></entry><entry><title type="html">CS Curriculum at CMU</title><link href="http://localhost:4000/blog/2023/cmu-courses/" rel="alternate" type="text/html" title="CS Curriculum at CMU" /><published>2023-08-22T20:00:00-04:00</published><updated>2023-08-22T20:00:00-04:00</updated><id>http://localhost:4000/blog/2023/cmu-courses</id><content type="html" xml:base="http://localhost:4000/blog/2023/cmu-courses/"><![CDATA[]]></content><author><name></name></author><category term="posts" /><category term="life" /><summary type="html"><![CDATA[The grind begins.]]></summary></entry></feed>
