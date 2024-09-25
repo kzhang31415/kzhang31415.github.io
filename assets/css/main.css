@@ -224,6 +224,12 @@ d-appendix h3,d-appendix li,d-appendix span{color:var(--global-distill-app-color
   }
 }
 
+.a{
+  mjx-container[jax="CHTML"][display="true"] {
+    display: unset;
+  }
+}
+
 .ul{
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
